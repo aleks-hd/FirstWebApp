@@ -23,6 +23,7 @@
                </tr>
               <c:forEach var="cust" items="${ReadDB}">
            		<tr>
+       
            			<form action="/brokers/ReadDB" method="post">
             		 <td> <input type="hidden" name="id" value="${cust.id}"></td> <!-- Вставляем нумерацию строк -->
 		           	 <td ><input class="dateCS" type="date" name="DateLight" value="${cust.dateLight}"></td>
